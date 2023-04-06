@@ -1,0 +1,102 @@
+/* If you want to modify this file, you may also need to change monokai.js */
+
+:root {
+	--monokai-background: #282923;
+	--monokai-foreground: #F8F8F2;
+	--monokai-comment: #74705D;
+	--monokai-red: #F92472;
+	--monokai-orange: #FD9622;
+	--monokai-yellow: #E7DB74;
+	--monokai-green: #A6E22B;
+	--monokai-blue: #67D8EF;
+	--monokai-purple: #AC80FF;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: var(--monokai-foreground);
+
+	/* sane values for code */
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	tab-size: 4;
+	hyphens: none;
+}
+
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: var(--monokai-background);
+}
+
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+/* now, finally, tokens... */
+/* https://prismjs.com/tokens.html */
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata
+{
+	color: var(--monokai-comment);
+}
+
+.token.keyword,
+.token.operator,
+.token.important,
+.token.tag,
+.token.atrule,
+.token.selector,
+.token.deleted
+{
+	color: var(--monokai-red);
+}
+
+.token.variable
+{
+	color: var(--monokai-orange);
+	font-style: italic;
+}
+
+.token.string,
+.token.char,
+.token.regex
+{
+	color: var(--monokai-yellow);
+}
+
+.token.attr-name,
+.token.inserted
+{
+	color: var(--monokai-green);
+}
+
+.token.function,
+.token.builtin,
+.token.attr-value
+{
+	color: var(--monokai-blue);
+}
+
+.token.boolean,
+.token.number,
+.token.constant,
+.token.entity
+{
+	color: var(--monokai-purple);
+}

@@ -1,0 +1,9 @@
+# This repository is actually a React app because I need to verify both CSS & JS work fine :|
+node_modules/
+public/
+
+src/*
+!src/monokai.*
+
+package.json
+package-lock.json

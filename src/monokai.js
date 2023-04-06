@@ -11,47 +11,47 @@ const monokai_blue = "#67D8EF";
 const monokai_purple = "#AC80FF";
 
 let theme = {
-  plain: {
-    color: monokai_foreground,
-    backgroundColor: monokai_background
-  },
-  styles: [{
-    types: ["comment", "prolog", "doctype", "cdata"],
-    style: {
-      color: monokai_comment
-    }
-  }, {
-    types: ["keyword", "operator", "important", "tag", "atrule", "selector", "deleted"],
-    style: {
-      color: monokai_red
-    }
-  }, {
-    types: ["variable"],
-    style: {
-      color: monokai_orange,
-      fontStyle: "italic"
-    }
-  }, {
-    types: ["string", "char", "regex"],
-    style: {
-      color: monokai_yellow
-    }
-  }, {
-    types: ["attr-name", "inserted"],
-    style: {
-      color: monokai_green
-    }
-  }, {
-    types: ["function", "builtin", "attr-value"],
-    style: {
-      color: monokai_blue
-    }
-  }, {
-    types: ["boolean", "number", "constant", "entity"],
-    style: {
-      color: monokai_purple
-    }
-  }]
+	plain: {
+		color: monokai_foreground,
+		backgroundColor: monokai_background
+	},
+	styles: [{
+		types: ["comment", "prolog", "doctype", "cdata"],
+		style: {
+			color: monokai_comment
+		}
+	}, {
+		types: ["keyword", "operator", "important", "tag", "atrule", "selector", "deleted"],
+		style: {
+			color: monokai_red
+		}
+	}, {
+		types: ["variable"],
+		style: {
+			color: monokai_orange,
+			fontStyle: "italic"
+		}
+	}, {
+		types: ["string", "char", "regex"],
+		style: {
+			color: monokai_yellow
+		}
+	}, {
+		types: ["attr-name", "inserted"],
+		style: {
+			color: monokai_green
+		}
+	}, {
+		types: ["function", "builtin", "attr-value"],
+		style: {
+			color: monokai_blue
+		}
+	}, {
+		types: ["boolean", "number", "constant", "entity"],
+		style: {
+			color: monokai_purple
+		}
+	}]
 };
 
 module.exports = theme;
